@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Payment</title>
+</head>
+
+<body>
+
+    <div class="payCard">
+        <div class="headerText">
+            <h2>Edit payment method</h2>
+            <img src="./src/Buttons.svg" alt="">
+        </div>
+        <div class="forms">
+            <div class="inpAndLabel">
+                <label for="cardName">Name on Card</label>
+                <input type="text" name="cardName" id="cardName">
+            </div>
+            <div class="inpAndLabel">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" name="cardNumber" id="cardNumber">
+            </div>
+            <div class="cardInfo">
+                <div class="inpAndLabel">
+                    <label for="data">Expiration Data</label>
+                    <input type="text" name="data" id="data">
+                </div>
+                <div class="inpAndLabel">
+                    <label for="cvc" style="color: #0A0B0D;">CVC</label>
+                    <input type="password" name="cvc" id="cvc">
+                </div>
+            </div>
+            <div class="inpAndLabel">
+                <label for="country">Country / Region</label>
+                <select name="country" id="country">
+                    <option value="georgia">Georgia</option>
+                    <option value="america">America</option>
+                    <option value="russia">Russia</option>
+                </select>
+            </div>
+            <div class="inpAndLabel">
+                <label for="zip">ZIP</label>
+                <input type="text" name="zip" id="zip">
+            </div>
+        </div>
+        <div class="payButtons">
+            <button class="cancle" onclick="clearLInes()">Cancle</button>
+            <button class="update" onclick="addCard()">Update</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

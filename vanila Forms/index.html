@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="./headIcon/Wubba Lubba Dub Dub.png" type="image/x-icon">
+    <title>Sing up</title>
+</head>
+
+<body>
+    <div class="mainPage">
+        <div class="traningForms">
+            <h1>Sing up</h1>
+            <div class="userConteiner">
+                <input type="text" name="name" id="name" placeholder="Name:">
+                <input type="text" name="lname" id="lname" placeholder="Lname:">
+            </div>
+            <input type="email" name="email" id="email" placeholder="email:">
+            <input type="password" name="password" id="password" placeholder="Password:">
+            <input type="tel" name="tel" id="tel" placeholder="tel:">
+            <select name="city" id="city" class="cities">
+                <option value="Tbilisi">თბილისი</option>
+                <option value="Batumi">ბათუმი</option>
+                <option value="Kutaisi">ქუთაისი</option>
+            </select>
+
+            <div class="genderConteiner">
+                <div class="genders">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="Male">
+                </div>
+                <div class="genders">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="Female">
+                </div>
+            </div>
+            <button type="submit" onclick="sendConsole()">send</button>
+        </div>
+    </div>
+</body>
+
+</html>
